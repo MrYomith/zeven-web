@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'ZevenPixel';
+  src: url('./assets/fonts/ZevenPixel.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+  /* Base dark blue */
+  background: #001315;
+
+
+
+  
+}
+
+/* Curved green area */
+#root::before {
+  content: "";
+  position: absolute;
+  bottom: -35%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 120%;
+  height: 90%;
+
+  background: radial-gradient(
+    ellipse at bottom,
+    #0D964D 0%,
+    rgba(13, 150, 77, 0.85) 15%,
+    rgba(13, 150, 77, 0.45) 50%,
+    rgba(6, 66, 57, 0) 70%
+  );
+
+  pointer-events: none;
+}

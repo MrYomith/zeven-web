@@ -1,0 +1,41 @@
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+}
+
+/* ZEVEN — perfectly centered */
+.logo {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: 'ZevenPixel', monospace;
+  font-weight: 100;
+  font-size: 190px;
+  letter-spacing: 6px;
+  color: #0D964D;
+
+
+
+  
+  line-height: 1;
+  -webkit-font-smoothing: none;
+  image-rendering: pixelated;
+}
+
+/* Tagline — closer, but NOT affecting centering */
+.tagline {
+  position: absolute;
+  top: calc(50% + 90px); /* 👈 controls distance from logo */
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.7);
+
+  white-space: nowrap;
+}
